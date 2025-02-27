@@ -34,10 +34,21 @@ it('recommendation', function() {
   cy.get('#mat-input-1').type('sri');
   cy.get('.mat-button-wrapper').click();
   cy.wait(2000);
-  cy.get('.button-container > .mat-focus-indicator').should('be.visible').click({force:true});
-  cy.get('.button-wrapper > .mat-focus-indicator').click();
-  cy.get('#mat-input-11').clear('a');
-  cy.get('#mat-input-11').type('af');
-  cy.get(':nth-child(1) > .cdk-column-actions > :nth-child(1) > .mat-button-wrapper > .mat-icon').click();
+  /* ==== End Cypress Studio ==== */
+  /* ==== Generated with Cypress Studio ==== */
+  cy.get('.button-container > .mat-focus-indicator > .mat-button-wrapper').click();
+  cy.get('#mat-input-3').clear('a');
+  cy.get('#mat-input-3').type('afrinnirmala2002@gmail.com');
+  cy.get(':nth-child(3) > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
+  cy.get('#mat-input-4').clear();
+  cy.get('#mat-input-4').type('nirmala');
+  cy.get('#mat-input-7').clear('s');
+  cy.get('#mat-input-7').type('sofia ln');
+  cy.get('#mat-input-8').clear('2');
+  cy.get('#mat-input-8').type('28262');
+  cy.get('.mat-form-field-suffix > .mat-focus-indicator > .mat-button-wrapper > .mat-icon').click();
+  cy.get('.mat-field.ng-star-inserted > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
+  cy.get('#mat-option-13 > .mat-option-text').click();
+  cy.get('.form-wrapper > .mat-raised-button > .mat-button-wrapper').click();
   /* ==== End Cypress Studio ==== */
 });
