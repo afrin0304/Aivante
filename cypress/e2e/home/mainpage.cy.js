@@ -1,8 +1,5 @@
 /// <reference types="cypress" />
 
-
-
-
 describe('example to-do app', () => {
   beforeEach(() => {
     cy.visit('http://169.61.105.110/medicareAdvantage_sandbox/login')
