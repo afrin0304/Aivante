@@ -17,39 +17,27 @@ describe('example to-do app', () => {
     // so we must tell it to visit our website with the `cy.visit()` command.
     // Since we want to visit the same URL at the start of all our tests,
     // we include it in our beforeEach function so that it runs before each test
-    cy.visit('http://169.61.105.110/aivante-medicare/user-info')
+    cy.visit('http://169.61.105.110/medicareAdvantage_sandbox/login')
   })
 
-  /* ==== Test Created with Cypress Studio ==== */
-  it('Basic_Test', function() {
-    /* ==== Generated with Cypress Studio ==== */
-    cy.get('#mat-input-0').clear('a');
-    cy.get('#mat-input-0').type('afrin@gmail.com');
-    cy.get('#mat-input-1').clear();
-    cy.get('#mat-input-1').type('Afrin nirmala');
-    cy.get('#mat-input-2').clear();
-    cy.get('#mat-input-2').type('28262{enter}');
-    cy.get('#mat-radio-1-input').check();
-    cy.get('.mdc-button__label').click();
-    /* ==== End Cypress Studio ==== */
-  });
-
-  /* ==== Test Created with Cypress Studio ==== */
-  it('basic2', function() {
-    /* ==== Generated with Cypress Studio ==== */
-    cy.get('#mat-input-0').clear('a');
-    cy.get('#mat-input-0').type('afrinnirmala2002@gmail.com');
-    cy.get('#mat-input-1').clear('A');
-    cy.get('#mat-input-1').type('Afrin nirmala');
-    cy.get('#mat-input-2').clear('2');
-    cy.get('#mat-input-2').type('28262');
-    cy.get('#mat-select-value-0').click();
-    cy.get('.mdc-icon-button > .mat-icon').click();
-    cy.get('#mat-radio-1-input').check();
-    cy.get('#mat-select-value-3').click();
-    cy.get('#mat-option-12 > .mdc-list-item__primary-text').click();
-    cy.wait(1000);
-    cy.get('.mdc-button > .mat-mdc-button-touch-target').should('be.visible').click({force:true});
-    /* ==== End Cypress Studio ==== */
-  });
+  
+  
 })
+
+/* ==== Test Created with Cypress Studio ==== */
+it('recommendation', function() {
+  /* ==== Generated with Cypress Studio ==== */
+  cy.visit('http://169.61.105.110/medicareAdvantage_sandbox/login');
+  cy.get('#mat-input-0').clear('v');
+  cy.get('#mat-input-0').type('valli@gmail.com');
+  cy.get('#mat-input-1').clear('s');
+  cy.get('#mat-input-1').type('sri');
+  cy.get('.mat-button-wrapper').click();
+  cy.wait(2000);
+  cy.get('.button-container > .mat-focus-indicator').should('be.visible').click({force:true});
+  cy.get('.button-wrapper > .mat-focus-indicator').click();
+  cy.get('#mat-input-11').clear('a');
+  cy.get('#mat-input-11').type('af');
+  cy.get(':nth-child(1) > .cdk-column-actions > :nth-child(1) > .mat-button-wrapper > .mat-icon').click();
+  /* ==== End Cypress Studio ==== */
+});
