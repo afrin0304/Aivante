@@ -7,5 +7,8 @@ module.exports = defineConfig({
     },
     chromeWebSecurity: false,
     experimentalStudio: true,
+    defaultCommandTimeout: 8000, // Increase timeout for commands
+    slowMo: 500, // Adds a delay of 500ms between commands
   },
+  
 });

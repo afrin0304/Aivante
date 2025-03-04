@@ -34,14 +34,18 @@ it('recommendation', function() {
   cy.get('#mat-input-1').type('sri');
   cy.get('.mat-button-wrapper').click();
   cy.wait(2000);
+
   /* ==== End Cypress Studio ==== */
   /* ==== Generated with Cypress Studio ==== */
   cy.get('.button-container > .mat-focus-indicator > .mat-button-wrapper').click();
+  cy.wait(2000);
   cy.get('#mat-input-3').clear('a');
   cy.get('#mat-input-3').type('afrinnirmala2002@gmail.com');
   cy.get(':nth-child(3) > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
   cy.get('#mat-input-4').clear();
+  cy.wait(1500);
   cy.get('#mat-input-4').type('nirmala');
+  cy.wait(2000);
   cy.get('#mat-input-7').clear('s');
   cy.get('#mat-input-7').type('sofia ln');
   cy.get('#mat-input-8').clear('2');
