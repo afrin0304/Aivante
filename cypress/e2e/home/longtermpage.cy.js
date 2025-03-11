@@ -1,4 +1,18 @@
 /* ==== Test Created with Cypress Studio ==== */
+describe('example to-do app', () => {
+  beforeEach(() => {
+    cy.visit('http://169.61.105.110/medicareAdvantage_sandbox/login')
+    cy.get('#mat-input-0').clear('a');
+    cy.get('#mat-input-0').type('valli@gmail.com');
+    cy.get('#mat-input-1').clear('s');
+    cy.get('#mat-input-1').type('sri');
+    cy.get('.mat-button-wrapper').click();
+  })
+
+  /* ==== Test Created with Cypress Studio ==== */
+  
+})
+
 it('longteamtest', function() {
   /* ==== Generated with Cypress Studio ==== */
   cy.visit('http://169.61.105.110/medicareAdvantage_sandbox/login');
@@ -51,5 +65,25 @@ it('longteamtest', function() {
   /* ==== Generated with Cypress Studio ==== */
   cy.wait(2000);
   cy.get('.ng-star-inserted > .mat-focus-indicator > .mat-button-wrapper').should('be.visible').click();
+  /* ==== End Cypress Studio ==== */
+  /* ==== Generated with Cypress Studio ==== */
+  cy.get('#mat-checkbox-4 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();
+  cy.get('#mat-checkbox-4-input').check();
+  cy.get('.button-wrapper > .mat-button-wrapper').click();
+  /* ==== End Cypress Studio ==== */
+  /* ==== Generated with Cypress Studio ==== */
+  cy.get(':nth-child(5) > .mat-focus-indicator > .mat-button-wrapper').click();
+  cy.get('#mat-checkbox-13 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();
+  cy.get('#mat-checkbox-13-input').check();
+  cy.get('.button-container > .mat-focus-indicator > .mat-button-wrapper').click();
+  cy.get('.mat-checkbox-inner-container').click();
+  cy.get('#mat-checkbox-25-input').check();
+  cy.get('.button-container > :nth-child(2) > .mat-button-wrapper').click();
+  /* ==== End Cypress Studio ==== */
+  /* ==== Generated with Cypress Studio ==== */
+  cy.get('.mat-expansion-panel-header-title').click();
+  cy.get('#mat-select-22 > .mat-select-trigger > .mat-select-arrow-wrapper').click();
+  cy.get('#mat-option-44 > .mat-option-text').click();
+  cy.get(':nth-child(5) > .mat-focus-indicator > .mat-button-wrapper').click();
   /* ==== End Cypress Studio ==== */
 });
